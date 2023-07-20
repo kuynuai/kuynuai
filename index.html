@@ -11,7 +11,7 @@
   <meta name="title" content="myTestTitl1111111 | POIZON " />
   <meta property="og:title" content="myTestTitle222222 | POIZON " />
   <meta name="description" content="testDescription111111." />
-  <!-- <meta property="og:description" content="testDescription2222222." /> -->
+  <meta property="og:description" content="testDescription33333." />
   <meta name="keywords" content="testKeywords1111" />
   <meta property="og:keywords" content="testKeywords22222222" />
   <meta property="og:image"
@@ -22,12 +22,12 @@
 </head>
 
 <body>
-  <div id="btn">分享到facebook111</div>
+  <div id="btn">分享到facebook222</div>
   <script>
     document.getElementById('btn').addEventListener("click", () => {
       // console.log('fenxiang')
 
-      window.open(`https://www.facebook.com/sharer/sharer.php?display=popup&u=${encodeURIComponent('https://m.poizonapp.com')}`, '_blank');
+      window.open(`https://www.facebook.com/sharer/sharer.php?display=popup&u=${encodeURIComponent(window.location.href)}`, '_blank');
     })
   </script>
 </body>
