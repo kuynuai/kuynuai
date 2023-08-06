@@ -9,29 +9,38 @@
 
   <meta name="facebook-domain-verification" content="9a307xnjd7k124odnungzaihnfzvkp" />
   <meta name="title" content="myTestTitl1111111 | POIZON " />
-  <meta property="og:title" content="myTestTitle99999 | POIZON " />
+  <meta property="og:title" content="myTestTitle88888 | POIZON " />
   <meta name="description" content="testDescription111111." />
   <meta property="og:description" content="testDescription6666666." />
   <meta name="keywords" content="testKeywords1111" />
   <meta property="og:keywords" content="testKeywords22222222" />
   <meta property="og:image"
-    content="https://cdn-img.poizonapp.com/pro-img/origin-img/20220212/c7fe00ea0f314c8290ac01196a7d1291.jpg" />
+    content="https://cdn.poizon.com/pro-img/origin-img/20220212/c7fe00ea0f314c8290ac01196a7d1291.jpg" />
   <meta property="og:image:width" content="800" />
   <meta property="og:image:height" content="800" />
   <meta name="next-head-count" content="29" />
+  <script>
+    window.addEventListener('error', function (event) {
+      console.log('eeeee', event);
+      // 如果事件是否为资源加载错误事件
+      if (event.target.tagName.toLowerCase() === 'script' || event.target.tagName.toLowerCase() === 'img') {
+        console.log('文件未能加载：' + event.target.src);
+      }
+    }, true);
+  </script>
 </head>
 
 <body>
-  <div id="btn">分享到facebook999999</div>
-  <img src="https://cdn-img.poizonapp.com/pro-img/origin-img/20220212/c7fe00ea0f314c8290ac01196a7d1291.jpg"
-    width="400px" alt="">
+
+  <div id="btn">分享到facebook8888888</div>
+  <img src="https://cdn.poizon.com/pro-img/origin-img/20220212/c7fe00ea0f314c8290ac01196a7d1291.jpg" width="400px"
+    alt="">
   <script>
     document.getElementById('btn').addEventListener("click", () => {
-      // console.log('fenxiang')
-
       window.open(`https://www.facebook.com/sharer/sharer.php?display=popup&u=${encodeURIComponent(window.location.href)}`, '_blank');
     })
   </script>
+
 </body>
 
 </html>
