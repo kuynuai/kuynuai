@@ -31,13 +31,24 @@
 </head>
 
 <body>
+  <div>
+    <button id="fail_btn">分享到facebook-失败</button>
+    <img src="https://cdn.poizon.com/pro-img/origin-img/20220212/c7fe00ea0f314c8290ac01196a7d1291.jpg" width="100%"
+      alt="">
+  </div>
+  <div style="margin-top: 20px;">
+    <button id="success_btn">分享到facebook-成功</button>
+    <img src="https://cdn-img.poizonapp.com/pro-img/origin-img/20230517/8117045e40ce41928633e9b7315c7c67.jpg"
+      width="100%" alt="">
+  </div>
 
-  <div id="btn">分享到facebook8888888</div>
-  <img src="https://cdn.poizon.com/pro-img/origin-img/20220212/c7fe00ea0f314c8290ac01196a7d1291.jpg" width="400px"
-    alt="">
   <script>
-    document.getElementById('btn').addEventListener("click", () => {
+    document.getElementById('fail_btn').addEventListener("click", () => {
       window.open(`https://www.facebook.com/sharer/sharer.php?display=popup&u=${encodeURIComponent(window.location.href)}`, '_blank');
+    })
+
+    document.getElementById('success_btn').addEventListener("click", () => {
+      window.open(`https://www.facebook.com/sharer/sharer.php?display=popup&u=${encodeURIComponent('https://m.poizonapp.com/goods/detail?id=66089912')}`, '_blank');
     })
   </script>
 
